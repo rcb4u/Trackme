@@ -44,6 +44,9 @@ public class MapsActivity extends FragmentActivity
     // checked inn1
 
     ///testing from rahul chaudhari
+    
+
+    //commit code from rahul
     private static final int REQUEST_PLACE_PICKER = 1;
     private GoogleMap mMap;
     private GoogleApiClient mGoogleApiClient;
