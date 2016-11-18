@@ -44,9 +44,13 @@ public class MapsActivity extends FragmentActivity
     // checked inn1
 
     ///testing from rahul chaudhari
-    
+
 
     //commit code from rahul
+
+
+
+    //looking for changes
     private static final int REQUEST_PLACE_PICKER = 1;
     private GoogleMap mMap;
     private GoogleApiClient mGoogleApiClient;
@@ -171,14 +175,14 @@ public class MapsActivity extends FragmentActivity
             Places.GeoDataApi
                     .getPlaceById(mGoogleApiClient, placeId)
                     .setResultCallback(new ResultCallback<PlaceBuffer>() {
-                                           @Override
-                                           public void onResult(PlaceBuffer places) {
-                                               LatLng location = places.get(0).getLatLng();
-                                               addPointToViewPort(location);
-                                               mMap.addMarker(new MarkerOptions().position(location));
-                                               places.release();
-                                           }
-                                       }
+                           @Override
+                           public void onResult(PlaceBuffer places) {
+                               LatLng location = places.get(0).getLatLng();
+                               addPointToViewPort(location);
+                               mMap.addMarker(new MarkerOptions().position(location));
+                               places.release();
+                           }
+                       }
                     );
         }
     }
